@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEX - Login</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1>MARVEX</h1>
+            <p>Welcome back, Hero!</p>
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email / Code Name</label>
+                <input type="email" id="email" required placeholder="tony.stark@stark.com">
+                <span class="error-message">Please enter a valid email</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Secret Code</label>
+                <div class="password-toggle">
+                    <input type="password" id="password" required placeholder="••••••••">
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                </div>
+                <span class="error-message">Password must be at least 6 characters</span>
+            </div>
+            <button type="submit" class="auth-btn">Activate Powers</button>
+            <div class="auth-links">
+                <a href="#" id="forgotPassword">Forgot Secret Code?</a>
+                <p>New to MARVEX? <a href="signup.html">Join the League</a></p>
+            </div>
+            <div class="social-login">
+                <p>Or login with</p>
+                <div class="social-buttons">
+                    <button type="button" class="social-btn">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
